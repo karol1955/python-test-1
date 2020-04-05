@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+Witamy z Django!
+
+{{ parametr }}
+
+<h1>{{ czas }}</h1>
+
+Moje pomysly:
+<ol>
+    {% for pomysl in pomysly %}
+        <li>{{ pomysl.nazwa }} -- {{ pomysl.tresc }}</li>
+    {% endfor %}
+</ol>
+</body>
+</html>
