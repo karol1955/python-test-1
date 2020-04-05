@@ -12,7 +12,7 @@ class Widok1(TemplateView):
 
     def get_context_data(self, **kwargs):
         return {
-            "parametr": random.randint(0, 100),
+            "parametr": random.randint(10, 90),
             "czas": time.ctime(),
             "pomysly": Pomysl.objects.all()
         }
